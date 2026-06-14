@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
+    int n, sum=0;
     cout<<"Enter size:";
-    cin>> n;
+    cin>>n;
     int arr[n];
     cout<<"Enter elements:\n";
-    for(int i=0; i<n; i++){
+    for(int i=0;i<n;i++)
+    {
         cin>>arr[i];
+        sum+=arr[i];
     }
-    cout<<"Array elements are:\n";
-    for(int i=0; i<n; i++){
-        cout<<arr[i]<<" ";
-    }
+    float avg=(float)sum/n;
+    cout<<"Sum of array elements is: "<<sum<<endl;
     return 0;
 }
